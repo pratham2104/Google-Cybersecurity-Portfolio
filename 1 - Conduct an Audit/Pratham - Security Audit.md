@@ -10,7 +10,9 @@ Botium Toys is a small U S–based company that designs and sells toys. One buil
 | **Section** | **Details** |
 |-------------|-------------|
 | **Scope** | The entire security program—including all hardware, software, data, networks, and physical premises. |
-| **Goals** | 1) Inventory assets and existing controls  2) Complete a controls & compliance checklist  3) Pinpoint gaps and recommend fixes. |
+| **Goals** | 1) Inventory assets and existing controls  
+2) Complete a controls & compliance checklist  
+3) Pinpoint gaps and recommend fixes. |
 | **Current Assets** | • On-prem equipment and employee devices  <br>• Retail inventory (store & warehouse)  <br>• Core systems: accounting, telecom, DB, security, e-commerce, inventory  <br>• Internet access & internal LAN  <br>• Data storage/retention  <br>• Legacy, end-of-life systems requiring human oversight |
 | **Risk Description** | Weak asset management and several missing controls leave Botium Toys out of step with U S and international regulations. |
 | **Control Best Practices** | First NIST-CSF function—**Identify**—must be strengthened: enumerate, classify, and assign business impact to every asset. |
