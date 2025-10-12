@@ -33,7 +33,67 @@ Here’s how you’ll do this: **First**, you’ll identify network interfaces t
 
 This command will run tcpdump with the following options:
 
--`i eth0`: Capture data specifically from the eth0 interface.
--`v`: Display detailed packet data.
--`c5`: Capture 5 packets of data.
+> -`i eth0`: Capture data specifically from the eth0 interface.
+
+> -`v`: Display detailed packet data.
+
+> -`c5`: Capture 5 packets of data.
+
+3. Capture network traffic with tcpdump
+
+* Capture packet data into a file called `capture.pcap` with `sudo tcpdump -i eth0 -nn -c9 port 80 -w capture.pcap &`
+
+This command will run tcpdump in the background with the following options:
+
+> -i eth0: Capture data from the eth0 interface.
+
+> -nn: Do not attempt to resolve IP addresses or ports to names.This is best practice from a security perspective, as the lookup data may not be valid. It also prevents malicious actors from being alerted to an investigation.
+
+> -c9: Capture 9 packets of data and then exit.
+port 80: Filter only port 80 traffic. This is the default HTTP port.
+
+> -w capture.pcap: Save the captured data to the named file.
+
+> &: This is an instruction to the Bash shell to run the command in the background.
+
+<img width="719" height="94" alt="image" src="https://github.com/user-attachments/assets/3712bcf5-a7ae-4a24-910f-dc8eee4d7773" />
+
+* Use curl to generate some HTTP (port 80) traffic: `curl opensource.google.com`
+
+<img width="719" height="177" alt="image" src="https://github.com/user-attachments/assets/80b05eb0-2226-4a5e-ad1a-6807c5516afd" />
+
+* Verify that packet data has been captured with `ls -l capture.pcap`
+
+<img width="717" height="75" alt="image" src="https://github.com/user-attachments/assets/8dd41176-3047-4407-8fcc-3eb8e2a1ac89" />
+
+4. Filter the captured packet data
+
+* Use the `tcpdump` command to filter the packet header data from the `capture.pcap` capture file: `sudo tcpdump -nn -r capture.pcap -v`
+
+This command will run tcpdump with the following options:
+
+> -nn: Disable port and protocol name lookup.
+
+> -r: Read capture data from the named file.
+
+> -v: Display detailed packet data.
+
+<img width="718" height="754" alt="image" src="https://github.com/user-attachments/assets/c05149e3-c778-4157-a1de-e085502e8c95" />
+<img width="717" height="483" alt="image" src="https://github.com/user-attachments/assets/85f12e32-c2c6-48ea-82c6-17d33c4b699b" />
+
+* Filter the extended packet data from the `capture.pcap` capture file with `sudo tcpdump -nn -r capture.pcap -X`
+
+This command will run tcpdump with the following options:
+
+> -nn: Disable port and protocol name lookup.
+
+> -r: Read capture data from the named file.
+
+>  -X: Display the hexadecimal and ASCII output format packet data. Security analysts can analyze hexadecimal and ASCII output to detect patterns or anomalies during malware analysis or forensic analysis.
+
+<img width="719" height="754" alt="image" src="https://github.com/user-attachments/assets/d9f937b7-ea1b-417d-91f0-172e3db77d86" />
+<img width="719" height="754" alt="image" src="https://github.com/user-attachments/assets/f99eb503-03ec-4f33-b209-885487f43ba8" />
+<img width="718" height="264" alt="image" src="https://github.com/user-attachments/assets/d7393af2-689e-45bf-8f5d-d79983bdba3b" />
+
+> Note: Hexadecimal, also known as hex or base 16, uses 16 symbols to represent values, including the digits 0-9 and letters A, B, C, D, E, and F. American Standard Code for Information Interchange (ASCII) is a character encoding standard that uses a set of characters to represent text in digital form.
 
