@@ -97,3 +97,9 @@ This command will run tcpdump with the following options:
 
 > Note: Hexadecimal, also known as hex or base 16, uses 16 symbols to represent values, including the digits 0-9 and letters A, B, C, D, E, and F. American Standard Code for Information Interchange (ASCII) is a character encoding standard that uses a set of characters to represent text in digital form.
 
+## What I Learned
+
+- identify network interfaces
+- use the tcpdump command to capture network data for inspection,
+- interpret the information that tcpdump outputs regarding a packet, and
+- save and load packet data for later analysis.2
