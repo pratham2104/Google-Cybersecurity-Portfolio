@@ -8,7 +8,7 @@ I am a detail-oriented and driven aspiring cybersecurity professional passionate
 
 𝑪𝒚𝒃𝒆𝒓𝒔𝒆𝒄𝒖𝒓𝒊𝒕𝒚 𝑷𝒐𝒓𝒕𝒇𝒐𝒍𝒊𝒐:
 
-- Developed a rigorous cybersecurity project portfolio on mock clients covering NIST, audits, Linux, SQL, assets, threats, vulnerabilities, detection, incident response, escalation, Wireshark, tcpdump, IDS, SIEM, and Python automation.
+- Developed a rigorous cybersecurity project portfolio on mock clients covering NIST audits, risk assessment, OS hardening, network architecture and firewalls, Linux, SQL, threat modeling (PASTA), asset and vulnerability management, IDS/Suricata, SIEM, IOC analysis, malware triage, incident response and escalation, and Python-based access control automation.
 
 ## Portfolio Contents
 
