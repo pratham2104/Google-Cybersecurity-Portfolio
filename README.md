@@ -20,3 +20,12 @@ I am a detail-oriented and driven aspiring cybersecurity professional passionate
 | 4 | [Assets, Threats & Vulnerabilities](./4%20-%20Assets%20%26%20Threats%20%26%20Vulnerabilities) | Asset management, threat modeling, vulnerability analysis |
 | 5 | [Detection & Response](./5%20-%20Detection%20%26%20Response) | IDS, SIEM, incident response, escalation |
 | 6 | [Automate Cybersecurity Tasks with Python](./6%20-%20Automate%20Cybersecurity%20Tasks%20with%20Python) | Python automation, file handling, IP allow list algorithm |
+
+## Applied Security Projects
+
+Beyond this coursework, see these independently-built security tools:
+
+- **[AI SIEM Triage Agent](https://github.com/pratham2104/ai-siem-triage-agent)** — self-hosted Wazuh SIEM + Gemini-based alert triage
+- **[API Attack Surface Auditor](https://github.com/pratham2104/api-attack-surface-auditor)** — async Python API security scanner, 16 vulnerability categories
+- **[SD-WAN Misconfiguration Scanner](https://github.com/pratham2104/sdwan-misconfiguration-scanner)** — multi-vendor SD-WAN config security auditor
+- **[Ransomware Behavioral Detector](https://github.com/pratham2104/ransomware-behavioral-detector)** — behavioral ransomware detection via entropy + rename-velocity monitoring
