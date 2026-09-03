@@ -1,4 +1,4 @@
-# Pratham-Cybersecurity-Portfolio
+# Google Cybersecurity Portfolio
 
 > Modules 1-6 are inspired by Google. Please visit this [link](https://www.coursera.org/google-certificates/cybersecurity-certificate) for further information. More are to come, stay tuned!
 
